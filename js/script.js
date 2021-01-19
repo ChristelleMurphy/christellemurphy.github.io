@@ -226,7 +226,7 @@ function speedSelection() {
   //displays gamertag form info
   function formData() {
       var formInput = document.getElementById("username").value;
-      document.getElementById("gamerTag").innerHTML = "formInput";
+      document.getElementById("gamerTag").innerHTML = "Welcome" + formInput;
       console.log("Player Identified");
   }
 

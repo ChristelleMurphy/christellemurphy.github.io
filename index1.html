@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body onload="onPageLoad()">
+
+<h1>Request Parameters</h1>
+<!--
+Commented out, you can replace action="." with action="url_to_your_game" e.g https://muddygames.bitbucket.io/game/index.html
+<form action="." method="get">
+    <input type="text" value="test" name="gamertag">
+    <button type="submit">Submit</button>
+  </form>
+    -->
+<form action="https://www.christellemurphy.github.io" method="GET" target="_blank">
+
+    <input type="text" name="q" value="pwa">
+    
+    <input type="text" name="username">
+    
+    <input type="password" name="password">
+    <br>
+    
+    <input type="radio" name="enemy" value="npc">NPC<br>
+    <input type="radio" name="enemy" value="boss" checked>Boss
+    <br>
+    
+    <input type="hidden" name="wallet" value="phil">
+    
+    <select name="enemy_color">​
+        <option value="Red">red</option>​
+        <option value="Green">green</option>​
+        <option value="BLUE">blue</option>​
+    </select>
+    <br>
+    
+    <button type="reset">Reset</button>
+    <button type="submit">Send my info to Google</button>
+    
+    </form>
+</body>
+</html>

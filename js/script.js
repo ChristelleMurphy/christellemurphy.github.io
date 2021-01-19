@@ -223,6 +223,13 @@ function speedSelection() {
     }
   }
 
+  //displays gamertag form info
+  function formData() {
+      var formInput = document.getElementById("username").value;
+      document.getElementById("gamerTag").innerHTML = "formInput";
+      console.log("Player Identified");
+  }
+
 var options = [{
     "text": "Select a Speed",
     "value": "normal",

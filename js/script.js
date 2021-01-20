@@ -226,7 +226,6 @@ function speedSelection() {
   function splitFunction() {
     var url = document.location.href;
     var result = str.split("="); // Splits string based on =
-    alert(result[1]);
     document.getElementById("gamerTag").innerHTML = "Welcome" + result[1];
     }
 

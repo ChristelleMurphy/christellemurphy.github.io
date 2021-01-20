@@ -16,6 +16,19 @@
 </head>
 
 <body>
+    <button onclick="splitFunction()">Split String</button>
+
+        <p id="demo"></p>
+
+        <script>
+        function splitFunction() {
+        var str = "?gamer_tag=Phil";
+        var result = str.split("="); // Splits string based on =
+        alert(result[0]);
+        alert(result[1]);
+        }
+        </script>
+
     <h2 id="gamerTag" onload="formData()"></h2>
     <h1 id="HUD" onload="speedSelection()"></h1>
     <canvas tabindex="1" id="game" width="700" height="600" style="border: black 1px solid;">

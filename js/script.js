@@ -223,23 +223,12 @@ function speedSelection() {
     }
   }
 
-  //displays gamertag form info
-  function onPageLoad() {
-      var href = window.location.href;
-      alert (href);
-
-      var protocol = window.location.protocol;
-      alert(protocol);
-
-      var host = window.location.protocol;
-      alert(host);
-
-      var pathname = window.location.pathname;
-      alert(pathname);
-
-      var search = window.location.search;
-      alert(search);
-  }
+  function splitFunction() {
+    var url = document.location.href;
+    var result = str.split("="); // Splits string based on =
+    alert(result[1]);
+    document.getElementById("gamerTag").innerHTML = "Welcome" + result[1];
+    }
 
 var options = [{
     "text": "Select a Speed",

@@ -224,10 +224,21 @@ function speedSelection() {
   }
 
   //displays gamertag form info
-  function formData() {
-      var formInput = document.getElementById("username").value;
-      document.getElementById("gamerTag").innerHTML = "Welcome" + formInput;
-      console.log("Player Identified");
+  function onPageLoad() {
+      var href = window.location.href;
+      alert (href);
+
+      var protocol = window.location.protocol;
+      alert(protocol);
+
+      var host = window.location.protocol;
+      alert(host);
+
+      var pathname = window.location.pathname;
+      alert(pathname);
+
+      var search = window.location.search;
+      alert(search);
   }
 
 var options = [{

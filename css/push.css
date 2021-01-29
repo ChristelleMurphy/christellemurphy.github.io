@@ -15,6 +15,10 @@ body{
   text-align: center;
 }
 
+#gamerTag{
+  text-align: center;
+}
+
 #controlButtons{
   margin: 0px auto;
 }
@@ -61,7 +65,7 @@ body{
   /* Slider Switch Checkbox */
   .switch {
     position: absolute;
-    bottom: 35%;
+    bottom: 30%;
     left: 80%;
     /* No line-break after the element, so the element can sit next to other elements.*/
     display: inline-block;
@@ -150,7 +154,7 @@ body{
     border-radius: 20px;
     position: absolute;
     left: 15%;
-    bottom: 35%;
+    bottom: 30%;
 
   
     /* WebKit */

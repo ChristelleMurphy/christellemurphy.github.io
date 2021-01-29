@@ -125,7 +125,6 @@ function update() {
                 player.y += playerSpeed;
             break;
         }
-
     }
     speedSelection();
 }

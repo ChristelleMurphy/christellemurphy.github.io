@@ -1,7 +1,42 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <link href='https://fonts.googleapis.com/css2?family=Potta+One&family=Press+Start+2P&display=swap' rel='stylesheet' type='text/css'>
+<style>
+    body {
+        background-color: lavender;
+    }
+    h1{
+        font-size: small;
+        font-family: 'Press Start 2P', cursive;
+        text-align: center;
+    }
+    div{
+        border-style: dotted;
+        background-color: lemonchiffon;
+        padding: 30px;
+        width: 300px;
+        height: 100px;
+        border-radius: 8px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #button{
+        border-radius: 5px;
+        margin-left: 3px;
+    }
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+</head>
 <body onload="onPageLoad()">
-
+<div>
 <h1>What is your name?</h1>
 <!--
 Commented out, you can replace action="." with action="url_to_your_game" e.g https://muddygames.bitbucket.io/game/index.html
@@ -10,14 +45,15 @@ Commented out, you can replace action="." with action="url_to_your_game" e.g htt
     <button type="submit">Submit</button>
   </form>
     -->
+
 <form action="https://christellemurphy.github.io/index1" method="GET" target="_blank">
-    
     <input type="text" id="username" name="username"> 
     <br>
     
-    <button type="submit">Send info to game</button>
+    <button type="submit" id="button">Submit</button>
     
     </form>
+</div>
 </body>
 
     <script src="./js/script.js"></script>

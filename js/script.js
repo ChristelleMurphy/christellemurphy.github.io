@@ -18,6 +18,9 @@ playerImage.src = "./img/spritesheet.png";
 var npcImage = new Image();
 npcImage.src = "./img/spritesheet1.png";
 
+var bg = new Image();
+bg.src = "./img/background.png";
+
 var canvas = document.getElementById("game");
 //2d context for canvas
 var context = canvas.getContext("2d");
@@ -33,6 +36,7 @@ var direction = 0;
 //Default speed is 2
 var playerSpeed = 0;
 // Default Player
+
 var player = new GameObject("Player", playerImage, 100);
 var npc = new GameObject("NPC", npcImage, 100);
 
@@ -205,6 +209,7 @@ function draw() {
 
     // Iterate through all GameObjects
     // Draw each GameObject
+    context.drawImage(bg, 0, 0);
     context.drawImage(playerImage, (playerImage.width / 6) * currentFrame, 0, 400, 400, player.x, player.y, 150, 150);
     context.drawImage(npcImage, (npcImage.width / 6) * currentFrame, 0, 400, 400, 250, 250, 150, 150);
     animate();

@@ -18,11 +18,11 @@
 <body>
     <h2 id="gamerTag" onload="splitFunction()"></h2>
     <h1 id="HUD" onload="speedSelection()"></h1>
-    <canvas tabindex="1" id="game" width="700" height="600" style="border: black 1px solid;">
+    <canvas tabindex="1" id="game" width="700" height="500" style="border: black 1px solid;">
         Oops! looks like your browser does not support canvas tag
     </canvas>
-    <table>
-        <tbody class="controlButtons">
+    <table id="controlButtons">
+        <tbody>
             <tr>
                 <td>&nbsp;</td>
                 <td><button onmousedown ="buttonOnClickUp()" onmouseup = "buttonOnClickNone()" class="button yellow round">Y</button></td>
@@ -39,20 +39,20 @@
                 <td>&nbsp;</td>
             </tr>
         </tbody>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td colspan="3" align="center">
-                  <label class="switch">
-                    <input id="active" onclick="speedSelection()" type="checkbox">
-                    <span class="toggle"></span>
-                  </label>
-                </td>
-              </tr>
     </table>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="3" align="center">
+        <label class="switch">
+          <input id="active" onclick="speedSelection()" type="checkbox">
+          <span class="toggle"></span>
+        </label>
+      </td>
+    </tr>
     <tr>
       <td colspan="3" align="center">
         <div class="custom-select" style="width:200px;">

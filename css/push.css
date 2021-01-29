@@ -21,6 +21,14 @@ body{
   text-align: center;
 }
 
+#instructions{
+  font-family: 'Press Start 2P', cursive;
+  font-size: x-small;
+  position: absolute;
+  bottom: 30%;
+  left: 62%;
+}
+
 #controlButtons{
   margin: 0px auto;
 }

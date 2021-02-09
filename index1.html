@@ -18,6 +18,8 @@
 <body onload="splitFunction()">
     <h2 id="gamerTag">hello</h2>
     <h1 id="HUD" onload="speedSelection()"></h1>
+    <h3 id="playerXPosition" onload="updatePositionX()"></h3>
+    <h3 id="playerYPosition" onload="updatePositionY()"></h3>
     <canvas tabindex="1" id="game" width="700" height="500" style="border: black 1px solid;">
         Oops! looks like your browser does not support canvas tag
     </canvas>
@@ -25,7 +27,7 @@
         <tbody>
             <tr>
                 <td>&nbsp;</td>
-                <td><button onmousedown ="buttonOnClickUp()" onmouseup = "buttonOnClickNone()" class="button yellow round">Y</button></td>
+                <td><button onmousedown ="buttonOnClickUp()" onmouseup ="buttonOnClickNone()" class="button yellow round">Y</button></td>
                 <td>&nbsp;</td>
             </tr>
             <tr>

@@ -21,6 +21,15 @@ body{
   text-align: center;
 }
 
+#playerXPosition{
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+}
+#playerYPosition{
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+}
+
 #instructions{
   font-family: 'Press Start 2P', cursive;
   font-size: x-small;

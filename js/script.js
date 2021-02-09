@@ -7,8 +7,21 @@ function GameObject(name, image, health) {
     this.name = name;
     this.img = image;
     this.health = health;
-    this.x = 0;
-    this.y = 0;
+    this.x = parseInt(localStorage.getItem('xPosition'));
+
+    if(isNaN(this.x))
+    {
+       this.x = 0;
+       localStorage.setItem('xPosition',0);
+    }
+
+    this.y = parseInt(localStorage.getItem('yPosition'));
+
+    if(isNaN(this.y))
+    {
+       this.y = 0;
+       localStorage.setItem('yPosition',0);
+    }
     this.height = 600;
     this.width = 400;
 }
@@ -128,11 +141,11 @@ function update() {
             case 4:
                 player.y += playerSpeed;
             break;
-        }
+        }  
     }
 
-    speedSelection();
-
+    speedSelection();   
+    
     //window boundaries
     if(player.x < 0 - playerSpeed){
         player.x = canvas.width - playerSpeed;
@@ -146,6 +159,8 @@ function update() {
     if(player.y > canvas.height - playerSpeed){
         player.y = 0;
     }
+    updatePositionX();
+    updatePositionY();
 }
 
 /*function collision(a, b)
@@ -244,18 +259,34 @@ function speedSelection() {
     var active = document.getElementById("active");
     if (active.checked == true) {
       document.getElementById("HUD").innerHTML = selection + " active ";
-      console.log("Speed Active");
     } else {
       document.getElementById("HUD").innerHTML = selection + " selected ";
       console.log("Speed Selected");
-    }
+    } 
   }
 
 function splitFunction() {
     var url = document.location.href;
     var result = url.split("="); // Splits string based on =
     document.getElementById("gamerTag").innerHTML = "Welcome " + result[1];
+    
+    }
+    
+function updatePositionX(){
+var current_positionX = localStorage.getItem('xPosition');
+    
+    document.getElementById("playerXPosition").innerHTML = " [ " + current_positionX + " ] ";
+    localStorage.setItem('xPosition', parseInt(gameobjects[0].x));
+    
 }
+
+function updatePositionY(){
+    var current_positionY = localStorage.getItem('yPosition');
+        
+        document.getElementById("playerYPosition").innerHTML = " [ " + current_positionY + " ] ";
+        localStorage.setItem('yPosition', parseInt(gameobjects[0].y));
+        
+    }
 
 var options = [{
     "text": "Select a Speed",

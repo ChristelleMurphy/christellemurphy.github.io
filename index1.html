@@ -23,6 +23,7 @@
     <canvas tabindex="1" id="game" width="700" height="500" style="border: black 1px solid;">
         Oops! looks like your browser does not support canvas tag
     </canvas>
+    <div id="ui_bits">
     <table id="controlButtons">
         <tbody>
             <tr>
@@ -33,11 +34,11 @@
             <tr>
                 <td><button ontouchend="buttonOnClickNone()" ontouchstart="buttonOnClickLeft()" onmousedown ="buttonOnClickLeft()" onmouseup ="buttonOnClickNone()" class="button red round">X</button></td>
                 <td>&nbsp;</td>
-                <td><button ontouchend="buttonOnClickNone()" ontouchstart="buttonOnClickUpRight()" onmousedown ="buttonOnClickRight()" onmouseup ="buttonOnClickNone()" class="button blue round">B</button></td>
+                <td><button ontouchend="buttonOnClickNone()" ontouchstart="buttonOnClickRight()" onmousedown ="buttonOnClickRight()" onmouseup ="buttonOnClickNone()" class="button blue round">B</button></td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td><button ontouchend="buttonOnClickNone()" ontouchstart="buttonOnClickUp()" onmousedown ="buttonOnClickDown()" onmouseup ="buttonOnClickNone()" class="button green round">A</button></td>
+                <td><button ontouchend="buttonOnClickNone()" ontouchstart="buttonOnClickDown()" onmousedown ="buttonOnClickDown()" onmouseup ="buttonOnClickNone()" class="button green round">A</button></td>
                 <td>&nbsp;</td>
             </tr>
         </tbody>
@@ -64,7 +65,7 @@
         </div>
       </td>
     </tr>
-
+  </div>
     <script>
       var xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {

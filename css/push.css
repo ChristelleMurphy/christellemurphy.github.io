@@ -40,6 +40,8 @@ body{
 
 #controlButtons{
   margin: 0px auto;
+  display: flex;
+  justify-content: center;
 }
 
 /* Button Styling */
@@ -189,4 +191,16 @@ body{
   }
 
  
+  @media screen and (min-width:480px) {
+    #instructions {
+      bottom: auto;
+    }
+
+    .switch{
+      bottom: auto;
+    }
+
+    select {
+      bottom: auto;
+    }
   }

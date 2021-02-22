@@ -64,9 +64,22 @@
         </div>
       </td>
     </tr>
+
+    <script>
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var response = JSON.parse(xhttp.responseText);
+          //document.getElementById("data").innerHTML = objects.pets[0].name;
+          console.log(response.PlayerSpeed);
+        }
+      };
+      xhttp.open("GET", "doc.json", true);
+      xhttp.send();
+      </script>
 </body>
 
     <!--JavaScript File-->
     <script src="./js/script.js"></script>
-
+    <script src="doc.json"></script>
 </html>

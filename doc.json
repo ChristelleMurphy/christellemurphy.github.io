@@ -1,3 +1,18 @@
 {
-    "speed":"normal"
+    
+    "PlayerSpeed":[
+        {
+            "name":"SuperFast",
+            "power" : 15 
+        },
+        {
+            "name":"Normal",
+            "power" : 13 
+        },
+        {
+            "name":"Slow",
+            "power" : 10 
+        }
+    ]
+    
 }

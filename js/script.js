@@ -265,12 +265,7 @@ function speedSelection() {
     } 
   }
 
-function splitFunction() {
-    var url = document.location.href;
-    var result = url.split("="); // Splits string based on =
-    document.getElementById("gamerTag").innerHTML = "Welcome " + result[1];
-    
-    }
+
     
 function updatePositionX(){
 var current_positionX = localStorage.getItem('xPosition');
@@ -313,6 +308,13 @@ for (var i = 0; i < options.length; i++) {
   var option = options[i];
   selectBox.options.add(new Option(option.text, option.value, option.selected));
 }
+
+function splitFunction() {
+    var url = document.location.href;
+    var result = url.split("="); // Splits string based on =
+    document.getElementById("gamerTag").innerHTML = "Welcome " + result[1];
+    
+    }
 
 function gameloop() {
     update(); 

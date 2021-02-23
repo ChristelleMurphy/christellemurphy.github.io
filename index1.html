@@ -7,7 +7,29 @@
     <title>GameLoop Example</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="HTML5 GameLoop Template">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="UI Programming">
+
+    <link rel="apple-touch-icon" href="img/icons/152_152.png">
+    <meta name="theme-color" content="white" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="christellem PWA (Progressive Web Application)">
+  
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-title" content="christellem PWA (Progressive Web Application)">
+  
+    <meta name="msapplication-TileImage" content="img/icons/144_144.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="manifest" href="/manifest.json">
+  
+    <link rel="stylesheet" href="./css/push.css">
+  
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 
     <!--StyleSheet-->
     <link rel="stylesheet" href="./css/push.css">
@@ -18,8 +40,11 @@
 <body onload="splitFunction()">
     <h2 id="gamerTag">hello</h2>
     <h1 id="HUD" onload="speedSelection()"></h1>
-    <h3 id="playerXPosition" onload="updatePositionX()"></h3>
-    <h3 id="playerYPosition" onload="updatePositionY()"></h3>
+    <div id="position">
+    <div id="playerXPosition" onload="updatePositionX()"></div>
+    <div id="playerYPosition" onload="updatePositionY()"></div>
+    </div>
+   
     <canvas tabindex="1" id="game" width="700" height="500" style="border: black 1px solid;">
         Oops! looks like your browser does not support canvas tag
     </canvas>
@@ -82,5 +107,6 @@
 
     <!--JavaScript File-->
     <script src="./js/script.js"></script>
+    <script src="./js/register.js"></script>
     <script src="doc.json"></script>
 </html>

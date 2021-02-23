@@ -20,14 +20,23 @@ body{
   font-family: 'Press Start 2P', cursive;
   text-align: center;
 }
+#position{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
 
 #playerXPosition{
   font-family: 'Press Start 2P', cursive;
-  text-align: center;
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
 }
 #playerYPosition{
   font-family: 'Press Start 2P', cursive;
-  text-align: center;
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
 }
 
 #instructions{

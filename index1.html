@@ -45,7 +45,7 @@
     <div id="playerYPosition" onload="updatePositionY()"></div>
     </div>
    
-    <canvas tabindex="1" id="game" width="700" height="500" style="border: black 1px solid;">
+    <canvas tabindex="0" id="game" width="700" height="500" style="border: black 1px solid;">
         Oops! looks like your browser does not support canvas tag
     </canvas>
     <div id="ui_bits">
@@ -76,7 +76,7 @@
     </tr>
     <tr>
       <td colspan="3" align="center">
-        <label class="switch">
+        <label for="active" class="switch">
           <input id="active" onclick="speedSelection()" type="checkbox">
           <span class="toggle"></span>
         </label>
@@ -84,7 +84,7 @@
     </tr>
     <tr>
       <td colspan="3" align="center">
-        <div class="custom-select" style="width:200px;">
+        <div for= "speed" class="custom-select" style="width:200px;">
           <select id="speed" onchange="speedSelection()">
           </select>
         </div>

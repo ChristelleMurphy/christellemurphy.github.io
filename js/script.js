@@ -240,11 +240,12 @@ function drawHealthbar() {
 // Draw GameObjects to Console
 function draw() {
     context.clearRect(0, 0, canvas.width, canvas.height); //clear previous frame
+
     // Iterate through all GameObjects
     // Draw each GameObject
     context.drawImage(bg, 0, 0);
-    context.drawImage(playerImage, (playerImage.width / 6) * currentFrame, 0, 400, 400, player.x, player.y, 75, 75);
-    context.drawImage(npcImage, (npcImage.width / 6) * currentFrame, 0, 400, 400, npcRandomx, npcRandomy, 75, 75);
+    context.drawImage(playerImage, (playerImage.width / 6) * currentFrame, 0, 400, 400, player.x, player.y, 150, 150);
+    context.drawImage(npcImage, (npcImage.width / 6) * currentFrame, 0, 400, 400, npcRandomx, npcRandomy, 150, 150);
     /*if (collision(player, npc)){
         npcRandomx = Math.floor((Math.random()*350)+1);
     }

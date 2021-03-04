@@ -8,7 +8,20 @@ body{
   margin-left: auto;
   margin-right: auto;
   display: block;
-  width: 800px;
+  width: 600px;
+}
+
+#ui_bits{
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  height: 350px;
+  border-color: #000000;
+  border-style: dashed;
 }
 
 #HUD{
@@ -22,35 +35,30 @@ body{
 }
 #position{
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  justify-content: center;
 }
 
 #playerXPosition{
   font-family: 'Press Start 2P', cursive;
   font-size: medium;
-  display: flex;
-  flex-direction: column;
 }
 #playerYPosition{
   font-family: 'Press Start 2P', cursive;
   font-size: medium;
-  display: flex;
-  flex-direction: column;
 }
 
 #instructions{
   font-family: 'Press Start 2P', cursive;
   font-size: x-small;
-  position: absolute;
-  bottom: 25%;
-  left: 62%;
+  position: relative;
+  left: 40%;
 }
 
 #controlButtons{
   margin: 0px auto;
-  display: flex;
-  justify-content: center;
+  position: relative;
+  top: 25%;
+  left: 35%;
 }
 
 /* Button Styling */
@@ -94,13 +102,13 @@ body{
   
   /* Slider Switch Checkbox */
   .switch {
-    position: absolute;
-    bottom: 25%;
-    left: 80%;
+    position: relative;
     /* No line-break after the element, so the element can sit next to other elements.*/
     display: inline-block;
     width: 60px;
     height: 34px;
+    right: -30%;
+    top: 10%;
   }
   
   .switch input {
@@ -182,10 +190,9 @@ body{
     border: 1px solid #C0C0C0;
     height: 34px;
     border-radius: 20px;
-    position: absolute;
-    left: 15%;
-    bottom: 25%;
-
+    position: relative;
+    left: -190%;
+    top: 5%;
   
     /* WebKit */
     -webkit-appearance: none;

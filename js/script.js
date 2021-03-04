@@ -22,8 +22,8 @@ function GameObject(name, image, health) {
        this.y = 0;
        localStorage.setItem('yPosition',0);
     }
-    this.height = 600;
-    this.width = 400;
+    this.height = 0;
+    this.width = 0;
 }
 
 //initialising sprite image
@@ -51,8 +51,8 @@ var direction = 0;
 //Default speed is 2
 var playerSpeed = 0;
 // Default Player
-var npcRandomx=Math.floor((Math.random()*650)+1);
-var npcRandomy=Math.floor((Math.random()*350)+1);
+var npcRandomx=Math.floor((Math.random()*300)+1);
+var npcRandomy=Math.floor((Math.random()*200)+1);
 
 var player = new GameObject("Player", playerImage, 100);
 var npc = new GameObject("NPC", npcImage, 100);
@@ -150,7 +150,7 @@ function update() {
     if(player.x < 0 - playerSpeed){
         player.x = canvas.width - playerSpeed;
     }
-    if(player.x > 800){
+    if(player.x > 300){
         player.x = 0;
     }
     if(player.y < 0 - playerSpeed){
@@ -243,9 +243,9 @@ function draw() {
 
     // Iterate through all GameObjects
     // Draw each GameObject
-    context.drawImage(bg, 0, 0);
-    context.drawImage(playerImage, (playerImage.width / 6) * currentFrame, 0, 400, 400, player.x, player.y, 150, 150);
-    context.drawImage(npcImage, (npcImage.width / 6) * currentFrame, 0, 400, 400, npcRandomx, npcRandomy, 150, 150);
+    context.drawImage(bg, 0, 0, 300, 200);
+    context.drawImage(playerImage, (playerImage.width / 6) * currentFrame, 0, 400, 400, player.x, player.y, 100, 100);
+    context.drawImage(npcImage, (npcImage.width / 6) * currentFrame, 0, 400, 400, npcRandomx, npcRandomy, 100, 100);
     /*if (collision(player, npc)){
         npcRandomx = Math.floor((Math.random()*350)+1);
     }

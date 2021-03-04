@@ -313,7 +313,7 @@ function splitFunction() {
     console.log("split");
     var url = document.location.href;
     var result = url.split("="); // Splits string based on =
-    document.getElementById("gamerTag").innerHTML = "Welcome " + result[1];
+    document.getElementById("gamerTag").innerHTML = result[1];
     }
 
 function gameloop() {

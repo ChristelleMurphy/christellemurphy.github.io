@@ -243,7 +243,7 @@ function draw() {
 
     // Iterate through all GameObjects
     // Draw each GameObject
-    context.drawImage(bg, 0, 0, 300, 200);
+    context.drawImage(bg, 0, 0, 245, 200);
     context.drawImage(playerImage, (playerImage.width / 6) * currentFrame, 0, 400, 400, player.x, player.y, 100, 100);
     context.drawImage(npcImage, (npcImage.width / 6) * currentFrame, 0, 400, 400, npcRandomx, npcRandomy, 100, 100);
     /*if (collision(player, npc)){

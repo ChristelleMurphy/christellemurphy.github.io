@@ -1,6 +1,7 @@
 var cacheName = 'chris-pwa';
 var filesToCache = [
   '/',
+  '/index.html',
   '/index1.html',
   '/css/push.css',
   '/js/script.js'

@@ -51,7 +51,7 @@ var direction = 0;
 //Default speed is 2
 var playerSpeed = 0;
 // Default Player
-var npcRandomx=Math.floor((Math.random()*300)+1);
+var npcRandomx=Math.floor((Math.random()*240)+1);
 var npcRandomy=Math.floor((Math.random()*200)+1);
 
 var player = new GameObject("Player", playerImage, 100);
@@ -150,7 +150,7 @@ function update() {
     if(player.x < 0 - playerSpeed){
         player.x = canvas.width - playerSpeed;
     }
-    if(player.x > 300){
+    if(player.x > 240){
         player.x = 0;
     }
     if(player.y < 0 - playerSpeed){

@@ -51,7 +51,7 @@ var direction = 0;
 //Default speed is 2
 var playerSpeed = 0;
 // Default Player
-var npcRandomx=Math.floor((Math.random()*240)+1);
+var npcRandomx=Math.floor((Math.random()*230)+1);
 var npcRandomy=Math.floor((Math.random()*200)+1);
 
 var player = new GameObject("Player", playerImage, 100);
@@ -150,7 +150,7 @@ function update() {
     if(player.x < 0 - playerSpeed){
         player.x = canvas.width - playerSpeed;
     }
-    if(player.x > 240){
+    if(player.x > 230){
         player.x = 0;
     }
     if(player.y < 0 - playerSpeed){
@@ -243,7 +243,7 @@ function draw() {
 
     // Iterate through all GameObjects
     // Draw each GameObject
-    context.drawImage(bg, 0, 0, 245, 200);
+    context.drawImage(bg, 0, 0, 230, 200);
     context.drawImage(playerImage, (playerImage.width / 6) * currentFrame, 0, 400, 400, player.x, player.y, 100, 100);
     context.drawImage(npcImage, (npcImage.width / 6) * currentFrame, 0, 400, 400, npcRandomx, npcRandomy, 100, 100);
     /*if (collision(player, npc)){
@@ -260,7 +260,7 @@ function speedSelection() {
     if (active.checked == true) {
       document.getElementById("HUD").innerHTML = selection + " active ";
     } else {
-      document.getElementById("HUD").innerHTML = selection + " selected ";
+      document.getElementById("HUD").innerHTML = selection + "<br> selected ";
       console.log("Speed Selected");
     } 
   }

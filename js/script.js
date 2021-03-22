@@ -268,7 +268,7 @@ function speedSelection() {
 
     
 function updatePositionX(){
-var current_positionX = localStorage.getItem('xPosition');
+    var current_positionX = localStorage.getItem('xPosition');
     
     document.getElementById("playerXPosition").innerHTML = " [ " + current_positionX + " ] ";
     localStorage.setItem('xPosition', parseInt(gameobjects[0].x));
@@ -276,7 +276,7 @@ var current_positionX = localStorage.getItem('xPosition');
 }
 
 function updatePositionY(){
-    var current_positionY = localStorage.getItem('yPosition');
+        var current_positionY = localStorage.getItem('yPosition');
         
         document.getElementById("playerYPosition").innerHTML = " [ " + current_positionY + " ] ";
         localStorage.setItem('yPosition', parseInt(gameobjects[0].y));
@@ -319,7 +319,6 @@ function splitFunction() {
 function gameloop() {
     update(); 
     draw();
-    window.requestAnimationFrame(gameloop);
 }
 
 // Handle Active Browser Tag Animation
